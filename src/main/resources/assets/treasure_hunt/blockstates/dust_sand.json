@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "break=0": { "model": "treasure_hunt:block/dust_sand" },
+    "break=1": { "model": "treasure_hunt:block/dust_sand_break_1" },
+    "break=2": { "model": "treasure_hunt:block/dust_sand_break_2" },
+    "break=3": { "model": "treasure_hunt:block/dust_sand_break_3" },
+    "break=4": { "model": "treasure_hunt:block/dust_sand_break_4" }
+  }
+}

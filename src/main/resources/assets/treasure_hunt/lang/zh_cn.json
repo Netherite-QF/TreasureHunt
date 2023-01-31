@@ -1,0 +1,10 @@
+{
+  "item.treasure_hunt.brush": "毛刷",
+  "item.treasure_hunt.chisel": "凿子",
+  "enchantment.treasure_hunt.exorcism": "驱魔",
+  "block.treasure_hunt.dust_sand": "细沙",
+  "block.treasure_hunt.soft_tuff": "软质凝灰岩",
+  "block.treasure_hunt.dust_soul_sand": "细灵魂沙",
+  "itemGroup.treasure_hunt.treasure_hunt": "寻宝",
+  "tooltip.block.dust_soul_sand": "仅在创造模式可用"
+}

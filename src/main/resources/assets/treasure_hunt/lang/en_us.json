@@ -1,0 +1,10 @@
+{
+  "item.treasure_hunt.brush": "Brush",
+  "item.treasure_hunt.chisel": "Chisel",
+  "enchantment.treasure_hunt.exorcism": "Exorcism",
+  "block.treasure_hunt.dust_sand": "Dust Sand",
+  "block.treasure_hunt.soft_tuff": "Soft Tuff",
+  "block.treasure_hunt.dust_soul_sand": "Dust Soul Sand",
+  "itemGroup.treasure_hunt.treasure_hunt": "Treasure Hunt",
+  "tooltip.block.dust_soul_sand": "Only Creative"
+}

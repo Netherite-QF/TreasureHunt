@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "break=0": { "model": "treasure_hunt:block/soft_tuff" },
+    "break=1": { "model": "treasure_hunt:block/soft_tuff_break_1" },
+    "break=2": { "model": "treasure_hunt:block/soft_tuff_break_2" },
+    "break=3": { "model": "treasure_hunt:block/soft_tuff_break_3" },
+    "break=4": { "model": "treasure_hunt:block/soft_tuff_break_4" },
+    "break=5": { "model": "treasure_hunt:block/soft_tuff_break_5" }
+  }
+}
