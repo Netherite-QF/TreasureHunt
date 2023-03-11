@@ -15,9 +15,9 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class BlockInit {
-    public static final DustSandBlock DUST_SAND_BLOCK = new DustSandBlock(AbstractBlock.Settings.of(Material.AGGREGATE).sounds(BlockSoundGroup.SAND).strength(0.42f).requiresTool());
-    public static final SoftTuffBlock SOFT_TUFF_BLOCK = new SoftTuffBlock(AbstractBlock.Settings.of(Material.STONE, MapColor.TERRACOTTA_GRAY).sounds(BlockSoundGroup.TUFF).requiresTool().strength(1.3f, 6.0f));
-    public static final DustSoulSandBlock DUST_SOUL_SAND_BLOCK = new DustSoulSandBlock(AbstractBlock.Settings.of(Material.SOIL).strength(0.5f).sounds(BlockSoundGroup.SOUL_SAND).requiresTool());
+    public static final DustSandBlock DUST_SAND_BLOCK = new DustSandBlock();
+    public static final SoftTuffBlock SOFT_TUFF_BLOCK = new SoftTuffBlock();
+    public static final DustSoulSandBlock DUST_SOUL_SAND_BLOCK = new DustSoulSandBlock();
 
     public static void blockInit() {
         {
