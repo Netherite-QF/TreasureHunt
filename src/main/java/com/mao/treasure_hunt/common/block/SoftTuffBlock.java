@@ -19,8 +19,8 @@ import net.minecraft.world.World;
 
 public class SoftTuffBlock extends Block {
     private static final IntProperty BREAK = IntProperty.of("break",0,5);
-    public SoftTuffBlock(Settings settings) {
-        super(settings);
+    public SoftTuffBlock() {
+        super(AbstractBlock.Settings.of(Material.STONE, MapColor.TERRACOTTA_GRAY).sounds(BlockSoundGroup.TUFF).requiresTool().strength(1.3f, 6.0f));
         setDefaultState(this.getStateManager().getDefaultState().with(BREAK,0));
     }
 
