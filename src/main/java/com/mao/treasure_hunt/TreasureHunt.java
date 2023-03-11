@@ -21,7 +21,6 @@ public class TreasureHunt implements ModInitializer {
     public void onInitialize() {
         LOGGER.info("Welcome to the world of treasures !");
         BlockInit.blockInit();
-        BlockInit.blockItemInit();
         WorldInit.blockFeatureInit();
         EnchantmentInit.enchantmentInit();
         ItemInit.itemInit();
