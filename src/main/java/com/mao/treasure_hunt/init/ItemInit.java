@@ -9,13 +9,13 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ItemInit {
-    public static final Brush BRUSH = new Brush(new Item.Settings().maxDamage(25).group(ItemGroup.TOOLS));
-    public static final Chisel CHISEL = new Chisel(new Item.Settings().maxDamage(64).group(ItemGroup.TOOLS));
+    public static final Brush BRUSH = new Brush();
+    public static final Chisel CHISEL = new Chisel();
 
     public static void itemInit() {
         {
-            Registry.register(Registry.ITEM,new Identifier(TreasureHunt.MODID,"brush"),BRUSH);
-            Registry.register(Registry.ITEM,new Identifier(TreasureHunt.MODID,"chisel"),CHISEL);
+            Registry.register(Registry.ITEM, new Identifier(TreasureHunt.MODID,"brush"), BRUSH);
+            Registry.register(Registry.ITEM, new Identifier(TreasureHunt.MODID,"chisel"), CHISEL);
         }
     }
 }
