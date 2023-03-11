@@ -18,20 +18,15 @@ public class BlockInit {
     public static final DustSandBlock DUST_SAND_BLOCK = new DustSandBlock();
     public static final SoftTuffBlock SOFT_TUFF_BLOCK = new SoftTuffBlock();
     public static final DustSoulSandBlock DUST_SOUL_SAND_BLOCK = new DustSoulSandBlock();
-
-    public static void blockInit() {
-        {
-            Registry.register(Registry.BLOCK,new Identifier(TreasureHunt.MODID,"dust_sand"),DUST_SAND_BLOCK);
-            Registry.register(Registry.BLOCK,new Identifier(TreasureHunt.MODID,"soft_tuff"),SOFT_TUFF_BLOCK);
-            Registry.register(Registry.BLOCK,new Identifier(TreasureHunt.MODID, "dust_soul_sand"),DUST_SOUL_SAND_BLOCK);
-        }
+    
+    public static void block(String id, Block block) {
+        Registry.register(Registry.BLOCK, Treasure.asId(id), block);
+        Registry.register(Registry.ITEM, Treasure.asId(id), new BlockItem(block, new Item.Settings().group(ItemGroup.DECORATIONS)));
     }
 
-    public static void blockItemInit() {
-        {
-            Registry.register(Registry.ITEM,new Identifier(TreasureHunt.MODID,"dust_sand"),new BlockItem(DUST_SAND_BLOCK, new Item.Settings().group(ItemGroup.DECORATIONS)));
-            Registry.register(Registry.ITEM,new Identifier(TreasureHunt.MODID,"soft_tuff"),new BlockItem(SOFT_TUFF_BLOCK, new Item.Settings().group(ItemGroup.DECORATIONS)));
-            Registry.register(Registry.ITEM,new Identifier(TreasureHunt.MODID, "dust_soul_sand"),new BlockItem(DUST_SOUL_SAND_BLOCK, new Item.Settings().group(ItemGroup.DECORATIONS)));
-        }
+    public static void blockInit() {
+            block("dust_sand", DUST_SAND_BLOCK);
+            block("soft_tuff", SOFT_TUFF_BLOCK);
+            block("dust_soul_sand", DUST_SOUL_SAND_BLOCK);
     }
 }
