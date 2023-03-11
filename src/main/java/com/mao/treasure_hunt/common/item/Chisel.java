@@ -5,8 +5,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 
 public class Chisel extends Item {
-    public Chisel(Settings settings) {
-        super(settings);
+    public Chisel() {
+        super(new Item.Settings().maxDamage(64).group(ItemGroup.TOOLS));
     }
 
     @Override

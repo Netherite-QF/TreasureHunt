@@ -5,8 +5,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 
 public class Brush extends Item {
-    public Brush(Settings settings) {
-        super(settings);
+    public Brush() {
+        super(new Item.Settings().maxDamage(25).group(ItemGroup.TOOLS));
     }
 
     @Override

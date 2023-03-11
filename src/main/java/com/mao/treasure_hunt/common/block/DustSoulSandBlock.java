@@ -29,8 +29,8 @@ import java.util.List;
 
 public class DustSoulSandBlock extends Block {
     private static final IntProperty BREAK = IntProperty.of("break",0,3);
-    public DustSoulSandBlock(Settings settings) {
-        super(settings);
+    public DustSoulSandBlock() {
+        super(AbstractBlock.Settings.of(Material.SOIL).strength(0.5f).sounds(BlockSoundGroup.SOUL_SAND).requiresTool());
         setDefaultState(this.getStateManager().getDefaultState().with(BREAK,0));
     }
 
