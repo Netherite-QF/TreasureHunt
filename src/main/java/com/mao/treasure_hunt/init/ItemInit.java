@@ -11,11 +11,15 @@ import net.minecraft.util.registry.Registry;
 public class ItemInit {
     public static final Brush BRUSH = new Brush();
     public static final Chisel CHISEL = new Chisel();
+    
+    public static void item(String id, Item item) {
+        Registry.register(Registry.ITEM, TreasureHunt.asId(id), item);
+    }
 
     public static void itemInit() {
         {
-            Registry.register(Registry.ITEM, new Identifier(TreasureHunt.MODID,"brush"), BRUSH);
-            Registry.register(Registry.ITEM, new Identifier(TreasureHunt.MODID,"chisel"), CHISEL);
+            item("brush", BRUSH);
+            item("chisel", CHISEL);
         }
     }
 }
