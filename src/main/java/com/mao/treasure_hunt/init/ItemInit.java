@@ -17,9 +17,7 @@ public class ItemInit {
     }
 
     public static void itemInit() {
-        {
             item("brush", BRUSH);
             item("chisel", CHISEL);
-        }
     }
 }
