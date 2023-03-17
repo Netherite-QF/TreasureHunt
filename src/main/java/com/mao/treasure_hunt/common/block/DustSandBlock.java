@@ -20,8 +20,8 @@ import net.minecraft.world.World;
 
 public class DustSandBlock extends Block {
     private static final IntProperty BREAK = IntProperty.of("break",0,4);
-    public DustSandBlock(Settings settings) {
-        super(settings);
+    public DustSandBlock() {
+        super(AbstractBlock.Settings.of(Material.AGGREGATE).sounds(BlockSoundGroup.SAND).strength(0.42f).requiresTool());
         setDefaultState(this.getStateManager().getDefaultState().with(BREAK,0));
     }
 
